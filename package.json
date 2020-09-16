@@ -1,0 +1,10 @@
+{
+  "name": "tbd",
+  "version": "1.0.0",
+  "description": "Your trunk-based development git cli",
+  "main": "",
+  "repository": "https://github.com/GitGangGuy/TBD.git",
+  "author": "GitGangGuy",
+  "license": "LGPL-3.0-or-later",
+  "private": false
+}
