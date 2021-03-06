@@ -1,10 +1,10 @@
 {
   "name": "tbd",
   "version": "1.0.0",
-  "description": "Your trunk-based development git cli",
+  "description": "Trunk-based development GitHub integration",
   "main": "",
   "repository": "https://github.com/GitGangGuy/TBD.git",
   "author": "GitGangGuy",
-  "license": "LGPL-3.0-or-later",
+  "license": "AGPL-3.0-only",
   "private": false
 }
