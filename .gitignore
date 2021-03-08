@@ -181,3 +181,9 @@ tags
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/yarn,node,git,sass,vim,visualstudiocode
+
+# CUSTOM
+*.pem
+!mock-cert.pem
+lib
+./wiki/

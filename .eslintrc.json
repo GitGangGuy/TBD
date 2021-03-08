@@ -1,0 +1,71 @@
+{
+	"env": {
+		"node": true,
+		"jest": true
+	},
+	"extends": ["plugin:jest/recommended", "airbnb-typescript/base", "prettier"],
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"rules": {
+				"global-require": "off"
+			}
+		}
+	],
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"parser": "@typescript-eslint/parser",
+		"sourceType": "module",
+		"project": "./tsconfig.eslint.json"
+	},
+	"plugins": ["sort-keys-fix", "sort-imports-es6-autofix", "jest", "@typescript-eslint"],
+	"root": true,
+	"rules": {
+		"for-direction": "error",
+		"getter-return": "warn",
+		"import/no-extraneous-dependencies": "off",
+		"import/no-unresolved": [
+			"error",
+			{
+				"caseSensitive": false,
+				"ignore": ["^@sapper"]
+			}
+		],
+		"import/order": "off",
+		"no-async-promise-executor": "error",
+		"no-compare-neg-zero": "warn",
+		"no-cond-assign": ["warn", "always"],
+		"no-console": "off",
+		"no-constant-condition": "warn",
+		"no-control-regex": "warn",
+		"no-debugger": "off",
+		"no-dupe-args": "warn",
+		"no-dupe-else-if": "warn",
+		"no-dupe-keys": "warn",
+		"no-duplicate-case": "warn",
+		"no-empty": "warn",
+		"no-empty-character-class": "warn",
+		"no-ex-assign": "warn",
+		"no-extra-boolean-cast": "warn",
+		"no-extra-semi": "warn",
+		"no-func-assign": "warn",
+		"no-import-assign": "warn",
+		"no-inner-declarations": "warn",
+		"no-invalid-regexp": "error",
+		"no-irregular-whitespace": "warn",
+		"no-misleading-character-class": "warn",
+		"sort-imports-es6-autofix/sort-imports-es6": [
+			"warn",
+			{
+				// allowSeparatedGroups: false,
+				"ignoreCase": false,
+				// ignoreDeclarationSort: false,
+				"ignoreMemberSort": false,
+				"memberSyntaxSortOrder": ["all", "multiple", "single", "none"]
+			}
+		],
+		"sort-keys": ["warn", "asc", { "caseSensitive": true, "minKeys": 2, "natural": true }],
+		"sort-keys-fix/sort-keys-fix": "warn",
+		"sort-vars": "warn"
+	}
+}
