@@ -11,11 +11,10 @@
 		"node": ">= 10.13.0"
 	},
 	"scripts": {
-		"add": "git add -A",
 		"build": "run-p build:*",
 		"build:typescript": "tsc",
 		"commit": "run-s commit:*",
-		"commit:add": "run-s fix add",
+		"commit:add": "run-s fix stage",
 		"commit:run": "cz",
 		"dev": "run-s dev:*",
 		"dev:build": "run-s build",
@@ -35,16 +34,18 @@
 		"prod:start": "run-s start",
 		"pull": "git pull --rebase",
 		"push": "git push --prune",
+		"stage": "git add -A",
 		"start": "run-p start:*",
 		"start:probot": "probot run ./lib/index.js",
-		"submodules": "git submodule update --remote",
-		"sync": "run-s git:fetch git:pull",
+		"submodule": "git submodule update --remote",
+		"sync": "run-s -c wiki submodule commit push fetch pull",
 		"test": "jest",
-		"trunk": "run-s trunk:merge add trunk:commit",
+		"trunk": "run-s trunk:merge stage trunk:commit",
 		"trunk:commit": "git commit -m 'fix: merge from master'",
 		"trunk:merge": "git merge master --no-commit",
 		"watch": "run-p watch:*",
-		"watch:typescript": "tsc -w"
+		"watch:typescript": "tsc -w",
+		"wiki": "cd wiki && yarn wiki"
 	},
 	"dependencies": {
 		"probot": "^11.0.1"
