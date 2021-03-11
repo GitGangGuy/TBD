@@ -1,0 +1,17 @@
+{
+	"restartable": "rs",
+	"ignore": [],
+	"verbose": false,
+	"execMap": {
+		"js": "node"
+	},
+	"events": {
+		"restart": "notify-send \"nodemon restarted ($(basename -s .js $FILENAME || echo 'nothing') changed)\""
+	},
+	"watch": ["lib"],
+	"env": {
+		"NODE_ENV": "development"
+	},
+	"ext": "js,json",
+	"delay": "1000"
+}
