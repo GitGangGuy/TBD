@@ -1,10 +1,8 @@
 {
-	"restartable": "rs",
+	"restartable": "r",
 	"ignore": [],
 	"verbose": false,
-	"execMap": {
-		"js": "node"
-	},
+	"execMap": {},
 	"events": {
 		"restart": "notify-send \"nodemon restarted ($(basename -s .js $FILENAME || echo 'nothing') changed)\""
 	},
