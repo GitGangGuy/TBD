@@ -27,15 +27,15 @@ Here are some instructions for local development or self-hosting:
 
 ### Development
 
-I use yarn!
+I use pnpm!
 
 ```sh
 # Install dependencies
-yarn
+pnpm
 
 # Run the bot in dev mode
-yarn dev
-# To run in production: yarn prod
+pnpm dev
+# To run in production: pnpm prod
 ```
 
 ### Deployment
