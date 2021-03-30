@@ -8,15 +8,15 @@
 <hr style="height: 2px; margin: 5px;" />
 <p align="center">
   <a href="#introduction">Introduction</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#recommendations">Recommendations</a> •
-  <a href="#plans">Plans</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#development">Development</a> •
+  <a href="#deployment">Deployment</a> •
   <a href="#license">License</a>
 </p>
 
 ## Introduction
 
-TBD is a [trunk based development](https://trunkbaseddevelopment.com/) app for GitHub, providing deep integration with trunk-based development workflows for your GitHub projects. It enforces [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages, a common [ISSUE->PR workflow](wiki/Workflow.md) and traceability from a commit back to its original issue. It aims to replace most other workflow-related GitHub apps with one unified solution.
+TBD is a [trunk based development](https://trunkbaseddevelopment.com/) app for GitHub (though it is adaptable to other platforms), providing deep integration with trunk-based development workflows for your GitHub projects. It enforces [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages, a common [ISSUE->PR workflow](wiki/Workflow.md) and traceability from a commit back to its original issue. It aims to replace most other workflow-related GitHub apps with one unified solution.
 
 ## Setup
 
@@ -44,10 +44,10 @@ Deploy using Docker:
 
 ```sh
 # Build container
-docker build -t tbd-probot .
+docker build -t tbd .
 
 # Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> tbd-probot
+docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> tbd
 ```
 
 ## License
