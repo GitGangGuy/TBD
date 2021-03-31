@@ -48,7 +48,6 @@
 		"stage": "run-s git:stage",
 		"pnpm": "run-s 'pnpm:*'",
 		"pnpm:1": "run-s 'pnpm:1:*'",
-		"pnpm:1:prune": "pnpm prune",
 		"pnpm:1:update": "pnpm update",
 		"pnpm:1:audit": "pnpm audit",
 		"pnpm:1:outdated": "pnpm outdated",
