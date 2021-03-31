@@ -3,7 +3,7 @@
 		"node": true,
 		"jest": true
 	},
-	"extends": ["plugin:jest/recommended", "airbnb-typescript/base", "prettier"],
+	"extends": ["plugin:jest/recommended", "airbnb-typescript/base", "plugin:prettier/recommended"],
 	"overrides": [],
 	"parserOptions": {
 		"ecmaVersion": 12,

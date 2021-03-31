@@ -18,5 +18,11 @@
 		"**/package-lock.json": true,
 		"**/yarn.lock": true
 	},
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"prettier.requireConfig": true,
+	"prettier.ignorePath": ".gitignore",
+	"prettier.useEditorConfig": true,
+	"prettier.withNodeModules": false,
+	"eslint.onIgnoredFiles": "warn",
+	"eslint.options": { "ignorePath": ".gitignore" }
 }
