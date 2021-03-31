@@ -40,6 +40,7 @@
 		"pnpm:1": "run-s 'pnpm:1:*'",
 		"pnpm:1:audit": "pnpm audit",
 		"pnpm:1:outdated": "pnpm outdated",
+		"pnpm:1:update": "pnpm update",
 		"pnpm:2": "run-s stage",
 		"pnpm:3": "git commit -m 'chore: bumped dependencies'",
 		"postinstall": "husky install",
