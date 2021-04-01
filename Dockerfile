@@ -1,8 +1,7 @@
-FROM node:12-slim
+FROM node:current-alpine
 WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
-RUN npm ci --production
-RUN npm cache clean --force
+COPY package.json pnpm-lock.yaml ./
+RUN npm run ci
 ENV NODE_ENV="production"
 COPY . .
-CMD [ "npm", "run", "prod" ]
+CMD [ "pnpm", "run", "prod" ]
